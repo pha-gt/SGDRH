@@ -23,17 +23,17 @@ require_once UTIL_PATH . 'ModalEditCommissions.php';
 require_once UTIL_PATH . 'ModalDeleteCommissions.php';
 require_once UTIL_PATH . 'ModalAddComision.php';
 require_once UTIL_PATH . 'ModalEditDocumento.php';
-require_once UTIL_PATH . 'ModalAddlicencias.php';
-require_once UTIL_PATH . 'ModalEditlicencias.php';
-require_once UTIL_PATH . 'ModalDeleteLicencias.php';
+//require_once UTIL_PATH . 'ModalAddlicencias.php';
+//require_once UTIL_PATH . 'ModalEditlicencias.php';
+//require_once UTIL_PATH . 'ModalDeleteLicencias.php';
 require_once UTIL_PATH . 'ModalAddUser.php';
 require_once UTIL_PATH . 'ModalEditUser.php';
 require_once UTIL_PATH . 'Alert.php';
 require_once UTIL_PATH . 'Modaldiasexcel.php';
 
 
-require_once UTIL_PATH . 'ModalAddTimeByTime.php';
-require_once UTIL_PATH . 'ModalEditTimeByTime.php';
-require_once UTIL_PATH . 'ModalUploadFileTimeByTime.php';
-require_once UTIL_PATH . 'ModalDeleteTimeByTime.php';
+//require_once UTIL_PATH . 'ModalAddTimeByTime.php';
+//require_once UTIL_PATH . 'ModalEditTimeByTime.php';
+//require_once UTIL_PATH . 'ModalUploadFileTimeByTime.php';
+//require_once UTIL_PATH . 'ModalDeleteTimeByTime.php';
 define('APP_NAME', 'SGDRH');
