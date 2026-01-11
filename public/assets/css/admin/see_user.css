@@ -1,0 +1,242 @@
+.container {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container a {
+    color: #00A29A;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.container i {
+    color: #00A29A;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.card_profile {
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_profile .card_user_avatar {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card_profile .card_user_avatar .avatar_stack {
+    position: relative;
+    width: 100px;
+    z-index: 1;
+}
+
+.card_profile .card_user_avatar .avatar_stack img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card_profile .card_user_avatar .avatar_stack i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #00A29A;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.card_profile .card_user_avatar .user_details {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.user-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.user-info {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.card_profile .card_user_avatar button {
+    background: #00A29A;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.card_profile .card_user_info {
+    align-items: center;
+    background: #CCECEA;
+    border-left: 1px solid #00A29A;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 20px;
+}
+
+.card_profile .card_user_info .input_group {
+    margin-bottom: 20px;
+}
+
+.card_profile .card_user_info .input_group label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card_profile .card_user_info .input_group input {
+    border: 1px solid #00A29A;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    width: calc(100% - 22px);
+}
+
+.card_profile .card_user_info .input_group input[readonly] {
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: default;
+}
+
+.card_profile .card_user_info .card_user_actions {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card_profile .card_user_info .card_user_actions button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    width: calc(100% - 22px);
+}
+
+.card_profile .card_user_info .card_user_actions .btn_edit {
+    background: #00A29A;
+    border: 1px solid #00A29A;
+    color: #CCECEA;
+    outline: none;
+}
+
+.card_profile .card_user_info .card_user_actions .btn_delete {
+    background: #ECCCCD;
+    border: 1px solid #A20008;
+    color: #A20008;
+    outline: none;
+}
+
+.modal_update_content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal_update_content .input_group {
+    width: 100%;
+}
+
+.modal_update_content .input_group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.modal_update_content .input_group input {
+    border: 1px solid #00A29A;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 20px;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+
+    .card_profile .card_user_avatar {
+        width: 300px;
+    }
+
+    .card_profile .card_user_avatar .user_details {
+        display: flex;
+        font-size: .8rem;
+    }
+
+    .user-name {
+        font-size: .8rem;
+    }
+
+    .user-info {
+        font-size: .6rem;
+    }
+
+    .card_profile .card_user_info .input_group label {
+        font-size: 1rem;
+    }
+
+    .card_profile .card_user_info .input_group input {
+        font-size: .8rem;
+    }
+
+    .card_profile .card_user_info .card_user_actions button {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .card_profile .card_user_avatar {
+        width: 400px;
+    }
+
+    .card_profile .card_user_avatar .user_details {
+        font-size: 1rem;
+    }
+
+    .user-name {
+        font-size: 1rem;
+    }
+
+    .user-info {
+        font-size: 1rem;
+    }
+
+    .card_profile .card_user_info .input_group input[readonly] {
+        font-size: 1rem;
+    }
+
+    .card_profile .card_user_info .card_user_actions button {
+        font-size: 1rem;
+    }
+
+}

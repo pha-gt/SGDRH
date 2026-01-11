@@ -1,0 +1,203 @@
+.card_table {
+    background: #CCECEA;
+    border-radius: 20px;
+    box-shadow: 10px 12px 24px -9px rgba(0, 0, 0, 0.75);
+    height: auto;
+    max-height: 950px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.card_table .card_table_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card_table .card_table_header h2 {
+    font-size: 2rem;
+}
+
+.dias_economicos {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: auto;
+}
+
+.dias_economicos i {
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: #00A29A;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding: 10px;
+    width: 50px;
+}
+
+.card_table .card_table_header .card_header_actions {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card_table .card_table_header button {
+    border: none;
+    border-radius: 5px;
+    background: #00A29A;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.card_table .card_table_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card_table .card_table_body .search_input {
+    position: relative;
+}
+
+.card_table .card_table_body .search_input input {
+    border: 2px solid #00A29A;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.card_table .card_table_body .search_input .fa-xmark {
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    top: 55%;
+}
+
+.card_table .table_header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #00A29A;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    margin: 20px 30px 0 0;
+    padding: 10px 20px;
+}
+
+.card_table .table_body {
+    max-height: 690px;
+    overflow-y: scroll;
+}
+
+.card_table .table_body .table_body_item {
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px 10px 10px 0;
+    padding: 20px;
+}
+
+.card_table .table_body .table_body_item.row_pendiente {
+    align-items: center;
+    background: #f9e2e2;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px 10px 10px 0;
+    padding: 20px;
+}
+
+.no_result_message {
+    align-items: center;
+    background: #00A29A;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.no_result_message span {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.no_result_message i {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Media queries para pantallas de tablets y superiores */
+@media (min-width: 768px) {
+    .card_table {
+        width: 95%;
+        min-width: 600px;
+    }
+
+    .card_table .card_table_header h2 {
+        font-size: 2.2rem;
+    }
+
+    .dias_economicos i {
+        font-size: 1.6rem;
+    }
+
+    .card_table .card_table_header button {
+        padding: 12px 24px;
+    }
+
+    .card_table .card_table_body .search_input input {
+        font-size: 1rem;
+    }
+
+    .card_table .table_header {
+        padding: 12px 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card_table {
+        min-width: 800px;
+        max-width: 1200px;
+    }
+
+    .card_table .card_table_header h2 {
+        font-size: 2.5rem;
+    }
+
+    .dias_economicos i {
+        font-size: 1.8rem;
+    }
+
+    .card_table .card_table_header button {
+        padding: 14px 28px;
+    }
+
+    .card_table .card_table_body .search_input input {
+        font-size: 1rem;
+    }
+
+    .card_table .table_header {
+        padding: 14px 28px;
+    }
+}

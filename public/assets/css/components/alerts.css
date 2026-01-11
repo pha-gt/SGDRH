@@ -1,0 +1,107 @@
+.alerts {
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    position: fixed;
+    width: calc(100% - 40px);
+}
+
+.alerts .card_alert {
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 150px;
+    max-width: 400px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    width: 100%;
+}
+
+.alerts .card_alert.hidden {
+    opacity: 0;
+}
+
+.alerts .card_alert .card_header {
+    align-items: center;
+    background: #00100f;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.alerts .card_alert .card_header .title {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.alerts .card_alert .card_header .close {
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 1.2rem;
+    height: 20px;
+    justify-content: center;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.alerts .card_alert .card_header .icon {
+    font-size: 1.6rem;
+}
+
+.alerts .card_alert .card_header .icon.success {
+    color: #a2ff86;
+}
+
+.alerts .card_alert .card_header .icon.warning {
+    color: #FAEF5D;
+}
+
+.alerts .card_alert .card_header .icon.error {
+    color: #D50000;
+}
+
+.alerts .card_alert .card_body {
+    background: #00302e;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    color: #FFFFFF;
+}
+
+.alerts .card_alert .card_body p {
+    padding: 10px 20px;
+}
+
+/* Media queries para pantallas de tablets y superiores */
+@media (min-width: 768px) {
+    .alerts {
+        width: auto;
+        right: 20px;
+        left: auto;
+    }
+
+    .alerts .card_alert {
+        width: 400px;
+    }
+}
+
+/* Media queries para pantallas de PC y superiores */
+@media (min-width: 1024px) {
+    .alerts {
+        width: auto;
+        right: 20px;
+        left: auto;
+    }
+
+    .alerts .card_alert {
+        width: 400px;
+    }
+}

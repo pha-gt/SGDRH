@@ -1,0 +1,134 @@
+@import url('parameters.css');
+@import url('template/navbar.css');
+@import url('template/sidebar.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container_main {
+    width: calc(100% - 80px);
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    height: calc(100% - 80px);
+    justify-content: center;
+    width: 100%;
+}
+
+.alerts {
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    position: fixed;
+}
+
+.alerts .card_alert {
+    border-radius: 5px;
+    max-height: 150px;
+    max-width: 90%;
+    opacity: 1;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+    width: 400px;
+}
+
+.alerts .card_alert.hidden {
+    opacity: 0;
+}
+
+.alerts .card_alert .card_header {
+    align-items: center;
+    background: #00100f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.alerts .card_alert .card_header .title {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.alerts .card_alert .card_header .close {
+    align-items: center;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2rem;
+    height: 20px;
+    justify-content: center;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.alerts .card_alert .card_header .icon {
+    font-size: 1.6rem;
+}
+
+.alerts .card_alert .card_header .icon.success {
+    color: #CCECEA;
+}
+
+.alerts .card_alert .card_header .icon.warning {
+    color: #ECEACC;
+}
+
+.alerts .card_alert .card_header .icon.error {
+    color: #ECCCCD;
+}
+
+.alerts .card_alert .card_body {
+    background: #00302e;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.alerts .card_alert .card_body p {
+    padding: 10px 20px;
+}
+
+/* Media queries para pantallas de tablets y superiores */
+@media (min-width: 768px) {
+
+    body {
+        flex-direction: row;
+    }
+
+    .container_main {
+        width: calc(100% - 80px);
+    }
+
+    .alerts .card_alert {
+        max-width: 70%;
+    }
+}
+
+/* Media queries para pantallas de PC y superiores */
+@media (min-width: 1024px) {
+    body {
+        flex-direction: row;
+    }
+
+    .container_main {
+        width: calc(100% - 80px);
+    }
+
+    .alerts .card_alert {
+        max-width: 400px;
+    }
+}

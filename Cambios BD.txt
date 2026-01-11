@@ -1,0 +1,65 @@
+Cambios para modulo tiempoXtiempo
+CREATE TABLE timebytime (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT,
+    folio varchar(255),
+    archivo LONGBLOB,
+    estatus ENUM('pendiente', 'entregado', 'cancelado') NULL DEFAULT 'pendiente';
+    fechaR DATE DEFAULT (CURRENT_DATE),
+    FOREIGN KEY (usuario_id) REFERENCES usuario(usuario_id) ON DELETE CASCADE
+);
+
+CREATE TABLE timebytimefaltas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    timebytime_id INT,
+    fechaF DATE,
+    horasF INT,
+    FOREIGN KEY (timebytime_id) REFERENCES TimeByTime(id) ON DELETE CASCADE
+);
+
+CREATE TABLE timebytimepagos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    timebytime_id INT,
+    fechaP DATE,
+    horaP INT,
+    estatusP TINYINT NULL DEFAULT 1,
+    FOREIGN KEY (timebytime_id) REFERENCES TimeByTime(id) ON DELETE CASCADE
+);
+
+Modificacion Para El Modulo De Comiciones
+
+CREATE TABLE comisiones (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    fecha_elaboracion DATE,
+    usuario_id INT,
+    lugar VARCHAR(255),
+    asunto VARCHAR(100) NULL,
+    viaticos ENUM('Si', 'No'),
+    especificacion_viaticos VARCHAR(100) NULL,
+    observaciones VARCHAR(100) NULL,
+    fecha_salida DATETIME,
+    fecha_regreso DATETIME,
+    transporte ENUM('Si', 'No'),
+    transporte_propio ENUM('Si', 'No') NULL,
+    marca VARCHAR(50) NULL,
+    modelo VARCHAR(50) NULL,
+    color VARCHAR(50) NULL,
+    placas VARCHAR(15) NULL,
+    kilometraje INT NULL,
+    status VARCHAR(50),
+    pdf longblob NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuario(usuario_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+Modificacion Para El Modulo De licencias
+
+CREATE TABLE licencias (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    fecha_elaboracion DATE,
+    usuario_id INT,
+    fecha_salida DATE,
+    fecha_regreso DATE,
+    status VARCHAR(50),
+    pdf longblob NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuario(usuario_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
