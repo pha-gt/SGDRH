@@ -3,7 +3,7 @@
 class DB
 {
     private $host = "localhost";
-    private $username = "tecmm_sgdhr";
+    private $username = "tecmm_sgdrh";
     private $password = "tecmm_sistemas";
     private $database = "sgdrh";
     private $connection;
