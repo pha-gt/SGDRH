@@ -11,7 +11,6 @@ define('CONTROLLER_PATH', BASE_PATH . '/src/controllers/');
 define('EMAIL_PATH', BASE_PATH . '/email/');
 define('MODEL_PATH', BASE_PATH . '/src/models/');
 define('PDF_PATH', BASE_PATH . '/pdf/');
-//define('PDF_PATH', BASE_PATH . '../pdf/');
 define('SERVER_PATH', BASE_PATH . '/server/');
 define('UTIL_PATH', BASE_PATH . '/src/utils/');
 define('VIEW_PATH', BASE_PATH . '/src/views/');

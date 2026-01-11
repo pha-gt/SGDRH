@@ -11,11 +11,11 @@ class UserModel
 
     public function getUserById($userID)
     {
-        $query = "SELECT usuario.*, rol.*, puesto.*, areaAdscripcion.*, jefeinmediato.*, sindicato.* 
+        $query = "SELECT usuario.*, rol.*, puesto.*, areaadscripcion.*, jefeinmediato.*, sindicato.* 
                   FROM usuario 
                   LEFT JOIN rol ON usuario.rol_id = rol.rol_id 
                   LEFT JOIN puesto ON usuario.puesto_id = puesto.puesto_id 
-                  LEFT JOIN areaAdscripcion ON usuario.areaAdscripcion_id = areaAdscripcion.areaAdscripcion_id 
+                  LEFT JOIN areaadscripcion ON usuario.areaadscripcion_id = areaadscripcion.areaadscripcion_id 
                   LEFT JOIN jefeinmediato ON usuario.jefeInmediato_id = jefeinmediato.jefeInmediato_id 
                   LEFT JOIN sindicato ON usuario.sindicato_id = sindicato.sindicato_id 
                   WHERE usuario.usuario_id = :userID";
