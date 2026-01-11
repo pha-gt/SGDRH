@@ -1,7 +1,7 @@
 <?php
 
 require_once UTIL_PATH . 'Session.php';
-require_once MODEL_PATH . "TimebyTimeModel.php";
+
 class TimeByTimeController
 {
     private $TimeByTimeModel;

@@ -2,6 +2,7 @@
 require __DIR__ . '/../../vendor/autoload.php';
 require_once MODEL_PATH . 'CommissionsModel.php';
 require_once MODEL_PATH . 'LicenciasModel.php';
+require_once MODEL_PATH . 'TimeByTimeModel.php';
 
 use Dompdf\Dompdf;
 use Dompdf\Options;
