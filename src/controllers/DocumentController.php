@@ -100,7 +100,8 @@ class DocumentController
             $directorName['usuario_nombre']
         );
 
-        $pathPDF = PDF_PATH . 'docs/' . $userInfo['usuario_nombre'] . ' Dia Economico ' . $actualDate . ' ' . time() . '.pdf';
+//        $pathPDF = PDF_PATH . 'docs/' . $userInfo['usuario_nombre'] . ' Dia Economico ' . $actualDate . ' ' . time() . '.pdf';
+        $pathPDF = PDF_PATH . 'docs/'. $actualDate . '_' . time() . '.pdf';
         $pdf->Output('F', $pathPDF, true);
 
         // Insertar sin validación de máximo
